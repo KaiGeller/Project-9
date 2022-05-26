@@ -8,7 +8,7 @@ class Point:
         return self._x_coord
     def get_y_coord(self):
         return self._y_coord
-    def distanceTo(self,p):
+    def distance_to(self,p):
         distance = (self._x_coord - p._x_coord)**2 + (self._y_coord - p._y_coord)**2
         return distance**.5
 class LineSegment:
