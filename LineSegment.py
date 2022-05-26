@@ -8,10 +8,10 @@ class Point:
     _x_coord = 0
     _y_coord = 0
 
-    def __init__(self,x,y):
+    def __init__(self,x_coordinate,y_coordinate):
         """This function initializes point with x and y coordinate"""
-        self._x_coord = x
-        self._y_coord = y
+        self._x_coord = x_coordinate
+        self._y_coord = y_coordinate
 
     def get_x_coord(self):
         """This function gets the x coordinate"""
