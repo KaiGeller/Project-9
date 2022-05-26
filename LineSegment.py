@@ -28,7 +28,7 @@ class LineSegment:
         dy = self._endpoint_1.get_y_coord()-self._endpoint_2.get_y_coord()
         return dy/dx
     def is_parallel_to(self,line_2):
-        if self.slope() != line_2.slope():
-            return False
-        return True
+        if abs(self.slope() - line_2.slope()) < 0.000001:
+            return True
+        return False
 
